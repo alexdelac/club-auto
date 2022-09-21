@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Club Auto</title>        
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+    <body>
+        <header>
+            <h1>LOCATION</h1>
+        </header>
+        <section>
+            <div class="d-flex">
+                <p>ORDRE :</p>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Prix : Croissant
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Prix : Croissant</a>
+                  <a class="dropdown-item" href="#">Prix : Decroissant</a>                  
+                </div>
+            </div>
+            </div>            
+            <div class="d-flex col-8 border-bottom border-top border-secondary p-3 ml-5">
+                <img src="/images/vehicule2.jpg" alt="BMW 535i" style="max-width: 350px;" class="img-fluid mr-4">
+                <div>
+                    <h2>BMW 535i, Navi, Leather, ABS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <a href="*">&rsaquo;&rsaquo; En savoir plus &lsaquo;&lsaquo;</a>
+                </div>
+                <p class="d-inline bg-primary text-white p-3" style="height: 40px;">20€/jour</p>
+            </div>    
+        </section>
+        <aside class="p-4 d-inline-flex flex-column border border-1">
+            <h1 class="bg-dark text-white">Rechercher</h1>
+            <div class="d-inline-flex flex-column">
+                <select name="typeVehicule" id="selectType" class="m-1 rounded-0">
+                    <option value="type">Type</option>
+                    <option value="citadine">citadine</option>
+                    <option value="berline">berline</option>
+                    <option value="SUV">SUV</option>
+                </select>
+                <select name="carburant" id="selectCarburant" class="m-1 rounded-0">
+                    <option value="carburant">Carburant</option>
+                    <option value="essence">essence</option>
+                    <option value="diesel">diesel</option>
+                </select>
+                <select name="marque" id="selectMarque" class="m-1 rounded-0">
+                    <option value="marque">Marque</option>
+                    <option value="BMW">BMW</option>
+                    <option value="audi">Audi</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Ford">Ford</option>
+                </select>
+                <select name="modele" id="selectModele" class="m-1 rounded-0">
+                    <option value="modele">Mod&egrave;le</option>
+                    <option value="BMW535i">BMW 535i</option>
+                    <option value="BMW328i">BMW 328i</option>
+                    <option value="fordExplorer">Ford Explorer</option>
+                </select>
+                <select name="kmMax" id="selectKmMax" class="m-1 rounded-0">
+                    <option value="kmMax">kilom&eacute;trage maximal</option>
+                    <option value="20000">20.000 km</option>
+                    <option value="50000">50.000 km</option>
+                    <option value="100000">100.000 km</option>
+                </select>
+                <select name="anciennete" id="selectAnciennete" class="m-1 rounded-0">
+                    <option value="anciennete">Anciennet&eacute;</option>
+                    <option value="2">2 ans</option>
+                    <option value="5">5 ans</option>
+                    <option value="10">10 ans</option>
+                </select>
+            </div>     
+            <h2>Prix</h2>             
+            <input type="range" min="2000" max="80000" value="1000" id="prixHaut" class="mb-2">
+            <div class="d-flex justify-content-around">
+                <p class="bg-secondary p-2">2000</p>
+                <p class="bg-secondary p-2">80000</p>
+            </div>
+            <input type="submit" value="REINITIALISER" class="btn btn-primary">
+
+                
+
+        </aside>
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
