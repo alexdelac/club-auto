@@ -7,9 +7,12 @@
         <link rel="stylesheet" href="css/bootstrap.min.css" />
     </head>
     <body>
-        <header class="container-fluid row m-0" >
+        <header class="container-fluid row m-0 p-0" >
+            <!--Bandeau en-tête des informations de contact et localisation. Sur petits écrans uniquement le téléphone reste visible-->
             <div class="col-8 col-md-12 d-flex justify-content-center bg-dark text-light align-items-center p-2 m-0">
-                <p class="d-none d-md-block h1 pr-5"><strong>CLUB AUTO</strong></p>
+                <a href="/index.html" class="text-white" style="text-decoration: none;">
+                    <p class="d-none d-md-block h1 pr-5"><strong>CLUB AUTO</strong></p>
+                </a>
                 <div class="d-flex mt-3 px-md-5">
                     <p class="d-none d-md-block mr-2"><img src="/images/icone-adresse.png" alt="icone adresse" style="max-width: 45px;"></p>
                     <p class="d-none d-md-block"><span style="color: orange;">ADRESSE :</span><br><span class="h6">AVENUE CHARLES DE GAULLE<br>75000 PARIS</span></p>
@@ -22,22 +25,25 @@
                 <p class="d-none d-md-block bg-secondary rounded-circle p-1 mr-3"><a href="*"><img src="/images/icone-facebook.png" alt="facebook" style="max-width: 20px;"></a></p>
                 <p class="d-none d-md-block bg-secondary rounded-circle p-1"><a href="*"><img src="/images/icone-twitter.png" alt="twitter" style="max-width: 20px;"></a></p>
             </div>
-                <nav class="col-4 col-md-12 navbar navbar-expand-md bg-light navbar-light">
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar-content">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a href="/index.html" class="nav-link" title="Vers la page d'accueil du site club auto">ACCUEIL</a></li>
-                            <li class="nav-item"><a href="/vente.html" class="nav-link" title="Vers la page de vente du site">VENTE</a></li>
-                            <li class="nav-item"><a href="/location.html" class="nav-link" title="Vers la page de location du site">LOCATION</a></li>
-                            <li class="nav-item"><a href="/contact.html" class="nav-link" title="Vers la page contact du site">CONTACT</a></li>
-                        </ul>
-                    </div>
-                </nav>
+            <!--Barre de navigation avec bouton toggle sur petits écrans-->
+            <nav class="col-4 col-md-12 navbar navbar-expand-md bg-light navbar-light">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="/index.html" class="nav-link" title="Vers la page d'accueil du site club auto">ACCUEIL</a></li>
+                        <li class="nav-item"><a href="/vente.html" class="nav-link" title="Vers la page de vente du site">VENTE</a></li>
+                        <li class="nav-item"><a href="/location.html" class="nav-link" title="Vers la page de location du site">LOCATION</a></li>
+                        <li class="nav-item"><a href="/contact.html" class="nav-link" title="Vers la page contact du site">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
+        <!--début de la page de detail d'un vehicule-->
         <div class="ml-md-5 pl-md-5">
             <div class="ml-md-5 pl-md-5">
+                <!--liens sous forme de texte permettant le retour à des étapes précédentes-->
                 <div class="col-12 col-md-10 row h6 border-bottom border-secondary ml-2 ml-md-5 pt-3">
                     <a href="/index.html" class="text-secondary">ACCEUIL</a>
                     <p class="mx-2">/</p>
@@ -50,6 +56,7 @@
                     <img src="/images/vehicule2.jpg" alt="photo BMW 353i" class="mw-100 img-fluid">
                 </div>
                 <div>
+                    <!--barre de navigation dans les differents details-->
                     <ul class="d-flex flex-column flex-md-row list-unstyled bg-dark text-light col-12 col-md-7 ml-2 ml-md-5 d-flex align-items-center list-unstyled">
                         <li class="bg-white mx-1 px-3 d-flex align-items-center " style="height: 50px; border: solid rgb(218, 123, 7); border-width: 4px 0px 0px;"><a href="*" class="text-dark" >DESCRIPTION</a></li>
                         <li class="mx-3 my-3 my-md-0"><a href="*" class="text-white">TECHNIQUE</a></li>
@@ -85,6 +92,7 @@
                 </div>           
             </div>
         </div>
+        <!--Début du footer-->
         <footer class="bg-dark text-white">
             <section class="d-flex flex-column flex-md-row justify-content-center border-bottom border-secondary pt-5 mx-5">
                 <div class="col-12 col-md-2 px-4 pb-4  ">
