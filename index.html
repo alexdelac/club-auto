@@ -5,66 +5,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Club Auto</title>        
         <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>        
         <header class="container-fluid row m-0 p-0" >
             <!--Bandeau en-tête des informations de contact et localisation. Sur petits écrans uniquement le téléphone reste visible-->
-            <div class="col-8 col-md-12 d-flex justify-content-center bg-dark text-light align-items-center p-2 m-0">
+            <div class="col-8 col-md-12 d-flex justify-content-center bg-dark text-light align-items-center px-2 m-0">
                 <a href="/index.html" class="text-white" style="text-decoration: none;">
-                    <p class="d-none d-md-block h1 pr-5"><strong>CLUB AUTO</strong></p>
+                    <p class="d-none d-md-block h2 pr-4"><strong>CLUB AUTO</strong></p>
                 </a>
-                <div class="d-flex mt-3 px-md-5">
+                <div class="d-flex mt-3 px-md-3">
                     <p class="d-none d-md-block mr-2"><img src="/images/icone-adresse.png" alt="icone adresse" style="max-width: 45px;"></p>
-                    <p class="d-none d-md-block"><span style="color: orange;">ADRESSE :</span><br><span class="h6">AVENUE CHARLES DE GAULLE<br>75000 PARIS</span></p>
+                    <p class="d-none d-md-block"><span style="color: orange;">ADRESSE :</span><br><span>AVENUE CHARLES DE GAULLE<br>75000 PARIS</span></p>
                 </div>
-                <div class="d-flex px-md-5">
+                <div class="d-flex px-md-3">
                     <p class="mr-2"><img src="/images/icon-telephone.png" alt="icone telephone" style="max-width: 45px;"></p>
-                    <p><span style="color: orange;">T&Eacute;L&Eacute;PHONE:</span><br><span class="h4"><strong>01 23 45 67 89</strong></span></p>
+                    <p><span style="color: orange;">T&Eacute;L&Eacute;PHONE:</span><br><span><strong>01 23 45 67 89</strong></span></p>
                 </div>              
-                <p class="d-none d-md-block px-5"><span style="color: orange;">OUVERTURE: </span><span class="h5"><strong>Du Lundi Au Samedi</strong></span><br><span style="color: orange;">HORAIRES: </span><span class="h5"><strong>De 9h &agrave; 17h</strong></span></p>                
+                <p class="d-none d-md-block px-5"><span style="color: orange;">OUVERTURE: </span><strong>Du Lundi Au Samedi</strong><br><span style="color: orange;">HORAIRES: </span><span><strong>De 9h &agrave; 17h</strong></span></p>                
                 <p class="d-none d-md-block bg-secondary rounded-circle p-1 mr-3"><a href="*"><img src="/images/icone-facebook.png" alt="facebook" style="max-width: 20px;"></a></p>
                 <p class="d-none d-md-block bg-secondary rounded-circle p-1"><a href="*"><img src="/images/icone-twitter.png" alt="twitter" style="max-width: 20px;"></a></p>
             </div>
             <!--Barre de navigation avec bouton toggle sur petits écrans-->
-            <nav class="col-4 col-md-12 navbar navbar-expand-md bg-light navbar-light">
+           
+            <nav class="d-md-none col-4 d-flex justify-content-center navbar navbar-expand-md bg-dark navbar-dark">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-content">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item" style="background-color: darkorange;"><a href="/index.html" class="nav-link active" title="Vers la page d'accueil du site club auto">ACCUEIL</a></li>
+                        <li class="nav-item"><a href="/index.html" class="nav-link active" title="Vers la page d'accueil du site club auto">ACCUEIL</a></li>
                         <li class="nav-item"><a href="/vente.html" class="nav-link" title="Vers la page de vente du site">VENTE</a></li>
                         <li class="nav-item"><a href="/location.html" class="nav-link" title="Vers la page de location du site">LOCATION</a></li>
                         <li class="nav-item"><a href="/contact.html" class="nav-link" title="Vers la page contact du site">CONTACT</a></li>
                     </ul>
                 </div>
-            </nav>           
+            </nav> 
+             <!--navbar grand écran-->                     
+            <nav class="d-none d-md-block col-md-12 py-0 pr-5 navbar navbar-expand-md bg-light navbar-light">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-2" style="background-color: darkorange;"><a href="/index.html" class="nav-link active" title="Vers la page d'accueil du site club auto">ACCUEIL</a></li>
+                        <li class="nav-item px-2"><a href="/vente.html" class="nav-link" title="Vers la page de vente du site">VENTE</a></li>
+                        <li class="nav-item px-2"><a href="/location.html" class="nav-link" title="Vers la page de location du site">LOCATION</a></li>
+                        <li class="nav-item px-2"><a href="/contact.html" class="nav-link" title="Vers la page contact du site">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
             <img src="/images/vehicule1.jpg" alt="vehicules" class="img-fluid d-none d-md-block" style="width: 100%;">                      
-            <h1 class="col-12 bg-dark text-light py-4 pl-5">CLUB AUTO <span style="color: darkorange;">LE MEILLEUR DE L'AUTOMOBILE</span></h1>    
+            <h1 class="col-12 bg-dark text-light py-4 pl-5"><strong>CLUB AUTO <span style="color: darkorange;">LE MEILLEUR DE L'AUTOMOBILE</span></strong></h1>    
+            
         </header>
         <main id="pageContent" class="container-fluid p-0 m-0">
             <!--zone de présentation de la société avec photos-->
-            <section class="row justify-content-center">
+            <section class="row justify-content-center mb-4">
                 <img src="/images/clients.jpg" alt="client" class="mw-50 col-12 col-md-5 img-fluid mt-md-4 ml-md-5">
                 <div class="col-12 col-md-5 mt-md-4 ml-md-5 ">                    
-                    <h2>BIENVENUE CHEZ CLUB AUTO</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    <h2><strong>BIENVENUE CHEZ <span style="color: darkorange;">CLUB AUTO</span></strong></h2>
+                    <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</strong></p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </div>
                 <div class="col-12 col-md-5 mb-md-4 ml-md-5 mt-md-5">   
-                    <h2>LE MEILLEUR DE L'AUTOMOBILE</h2>     
+                    <h2 class="mb-5 pb-5 border-bottom border-secondary"><strong>LE MEILLEUR DE L'AUTOMOBILE</strong></h2>     
                     <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</P>
                     <ul>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet</li>
+                        <li class="my-2">Lorem ipsum dolor sit amet</li>
+                        <li class="my-2">Lorem ipsum dolor sit amet</li>
+                        <li class="my-2">Lorem ipsum dolor sit amet</li>
+                        <li class="my-2">Lorem ipsum dolor sit amet</li>
+                        <li class="my-2">Lorem ipsum dolor sit amet</li>
                     </ul>                                       
                 </div>
                 <img src="/images/entretien.jpg" alt="entretien" class="col-12 col-md-5 img-fluid mb-md-4 ml-md-5"> 
@@ -108,30 +126,36 @@
                         <li class="col-12 col-md-4 w-25">
                             <a href="/vehicule-detail.html" class="text-white">
                                 <img src="/images/vehicule2.jpg" alt="photo bmw 535I" class="img-fluid mb-3">
-                                <div class="bg-secondary border-bottom border-secondary d-flex">
-                                    <p class="h4 p-3 ml-md-4 mr-md-5 pr-md-5">BMW 535I, NAVI,<br>LEATHER, ABS</p>
-                                    <p class= "bg-primary d-inline-flex flex-column h5 m-3 pt-3 pl-4  w-25" style="max-height: 60px;"><strong>5500€</strong></p>
-                                </div>
+                                <div class="p-4 bg-secondary">
+                                    <div class="bg-secondary border-bottom border-white d-flex justify-content-between">
+                                        <p class="h5 p-3 ml-md-4 mr-md-5 pr-md-5"><strong>BMW 535I, NAVI,<br>LEATHER, ABS</strong></p>
+                                        <p class= "bg-primary d-inline-flex flex-column h5 p-2 pr-3 py-3 mt-3 mr-3" style="max-height: 60px;"><strong>5500€</strong></p>
+                                    </div>
+                                </div>                                
                             </a>
                         </li>
                         <li class="col-12 col-md-4 w-25 d-none d-md-block">
                             <a href="/vehicule-detail.html" class="text-white">
                                 <img src="/images/vehicule2.jpg" alt="photo bmw 328I" class="img-fluid mb-3">                            
-                                <div class="bg-secondary border-bottom border-secondary d-flex">
-                                    <p class="h4 p-3 ml-4 mr-5 pr-5">BMW 328I, SPORT<br>LINE BODY KIT</p>
-                                    <p class= "bg-primary d-inline-flex flex-column h5 m-3 pt-3 pl-4  w-25" style="max-height: 60px;"><strong>8000€</strong></p>
-                                </div>
+                                <div class="p-4 bg-secondary">
+                                    <div class="bg-secondary border-bottom border-white d-flex justify-content-between">
+                                        <p class="h5 p-3 ml-4 mr-5 pr-5">BMW 328I, SPORT<br>LINE BODY KIT</p>
+                                        <p class= "bg-primary d-inline-flex flex-column h5 p-2 pr-3 py-3 mt-3 mr-3" style="max-height: 60px;"><strong>8000€</strong></p>
+                                    </div>
+                                </div>                                
                             </a>
                         </li>
                         <li class="col-12 col-md-4 w-25 d-none d-md-block">
                             <a href="/vehicule-detail.html" class="text-white">
                             <img src="/images/vehicule2.jpg" alt="photo ford explorer" class="img-fluid mb-3">
-                            <div class="bg-secondary d-flex border-bottom border-secondary">
-                                <p class="h4 p-3 ml-4">BMW FORD EXPLORER 2015<br>4WD</p>
-                                <div class="bg-primary d-inline-flex flex-column m-3 p-2 pl-4 w-25" style="max-height: 60px;" >
-                                    <p class="text-dark mb-0 h6"><del>9000€</del></p>
-                                    <p class="h5"><strong>8200€</strong></p>
-                                </div>    
+                            <div class="p-4 bg-secondary">
+                                <div class="bg-secondary d-flex justify-content-between border-bottom border-white">
+                                    <p class="h5 p-3 ml-4">BMW FORD EXPLORER 2015<br>4WD</p>                                
+                                    <div class="bg-primary h5 h-25 p-2 pr-3 ">
+                                        <p class="text-dark mb-0 h6"><del>9000€</del></p>
+                                        <p class="h5"><strong>8200€</strong></p>
+                                    </div>    
+                                </div>                                
                             </div>
                             </a>
                         </li>
@@ -141,7 +165,7 @@
             <!--Présentation des points forts de la société avec bouton d'accé au formulaire de contact-->
             <section>
                 <h2 class="text-center my-5">Pourquoi nous choisir ?</h2>
-                <ul class="d-flex flex-column align-items-center flex-md-row list-unstyled py-5">
+                <ul class="d-flex flex-column align-items-center flex-md-row list-unstyled pt-5">
                     <li>
                         <img src="/images/icon1.png" alt="icone financement">
                     </li>
@@ -171,7 +195,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                     </li>
                 </ul>
-                <div class="d-flex justify-content-center py-5">
+                <div class="d-flex justify-content-center py-3">
                     <form action="/contact.html">
                         <button type="submit" class="btn btn-primary mb-5 p-3">CONTACTEZ NOUS</button>
                     </form>    
@@ -182,7 +206,7 @@
                 <br>
                 <br>
                 <br>                
-                <div class="bg-warning ml-md-5 p-4 col-12 col-md-3" style="opacity: 0.85;">
+                <div class="bg-warning ml-md-5 p-4 col-12 col-md-4" style="opacity: 0.85;">
                     <h2>CLUB AUTO<br> <span class="text-white">VENTE ET LOCATION</span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
@@ -214,11 +238,8 @@
                     <p class="text-secondary"></p>
                 </div>
                 <div class="col-3 px-4 pb-4 ">
-                    <form action="*">
                         <label for="email">NEWSLETTER</label><br>
-                        <input type="email" id="email" name="email" placeholder="Entrez votre email" style="height: 36px;" required>
-                        <button type="submit" ><img src="/images/icone-rss.png" alt="icone rss" style="max-width: 30px;"></button>
-                    </form>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" class="px-0 pb-1" required><a href="*"><img src="/images/icone-rss.png" alt="icone rss" style="max-width: 33px; height: 33px;"></a>
                     <p class="text-secondary">Inscrivez vous pour recevoir les derni&egrave;re offres</p>
                 </div>
                 <div class="col-2 px-4 pb-4 ">
